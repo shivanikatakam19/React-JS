@@ -1,0 +1,77 @@
+.main-container {
+    width: 550px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.airbnb-logo {
+    width: 15vmin;
+    margin-left: 2.5rem;
+}
+
+section {
+    position: relative;
+}
+
+.navbar {
+    width: 550px;
+    Height: 70px;
+    /* display: grid;
+    align-items: center; */
+    box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.3);
+}
+
+.photogrid--logo {
+    width: 395.91px;
+    Height: 232px;
+}
+
+.small--text {
+    width: 320px;
+    height: fit-content;
+    margin-left: 36px;
+    font-family: poppins;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card--image {
+    width: 170px;
+    height: 235px;
+    top: 521px;
+    left: 37px;
+    gap: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+}
+
+.card--text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.airbnb--cards {
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    margin-left: 1rem;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+}
