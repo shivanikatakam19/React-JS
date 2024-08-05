@@ -92,3 +92,31 @@ body {
     text-align: center;
     margin-bottom: 2px;
 }
+
+.text-danger {
+    color: red !important;
+}
+
+.css-1yjjitx-MuiSwitch-track {
+    background-color: aquamarine !important;
+}
+
+.user-form-container {
+    display: flex;
+    padding-left: 4%;
+}
+
+.user-form-container label {
+    display: grid;
+    margin-bottom: 3%;
+}
+
+.user-form-container label input {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.user-form-container label p {
+    margin-bottom: 0px !important;
+}
