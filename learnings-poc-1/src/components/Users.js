@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
 
 function Users() {
     const baseUrl = "https://reqres.in/";
@@ -8,6 +9,7 @@ function Users() {
     const [response, setResponse] = useState(null);
     const userForm = useRef(null)
     const [isUserAdded, addUser] = useState(false)
+    const navigation = useNavigate()
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,6 +35,7 @@ function Users() {
                 const response = await axios.post(baseUrl + 'api/users', reqJson)
                 setResponse(response.name);
                 addUser(false)
+                window.alert("user added successfully")
             } catch (err) {
                 setError(err)
             }
@@ -41,6 +44,10 @@ function Users() {
 
     function onClickAddUser() {
         addUser(true)
+    }
+
+    function getIndividualEmployee(id) {
+        navigation(`/users/${id}`)
     }
 
 
@@ -52,7 +59,8 @@ function Users() {
                     <div className='mt-3 col-md-2' key={user.id}>
                         <section className='col d-grid'>
                             <div className="card--badge">{user.id}</div>
-                            <img className='card--image' src={user.avatar} alt={user.first_name + '' + user.last_name} />
+                            <img className='card--image' src={user.avatar} alt={user.first_name + '' + user.last_name}
+                                onClick={() => getIndividualEmployee(user.id)} />
                             <small className='card--text'>{user.first_name + '' + user.last_name}</small>
                             <small className='card--text'>{user.email}</small>
                         </section>

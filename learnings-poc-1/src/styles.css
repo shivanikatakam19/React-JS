@@ -24,6 +24,7 @@
     font-weight: 600;
     font-size: 17px;
     margin: 0px 19px;
+    width: max-content;
 }
 
 .navbar-nav a.active {
@@ -119,4 +120,41 @@ body {
 
 .user-form-container label p {
     margin-bottom: 0px !important;
+}
+
+.predefined-link-container {
+    margin-top: 1rem;
+}
+
+.predefined-link-container a {
+    color: White !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 17px;
+    background: blue;
+    padding: 5px;
+    border-radius: 5px;
+    width: 12rem;
+    text-align: center;
+}
+
+.predefined-link-container a:not(:nth-child(1)) {
+    margin-top: 1rem;
+}
+
+.user-profile {
+    margin-top: 3vh;
+}
+
+.user-profile img {
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }

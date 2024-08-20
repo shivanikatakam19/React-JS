@@ -10,7 +10,7 @@ export default function Footer() {
             <h6 className="text-center">@photographer_37</h6>
             <div className="d-flex align-items-center justify-content-around">
                 <p>
-                    Copyright ©2024 All rights reserved | Template is made by Shivani Katakam
+                    Copyright ©{new Date().getFullYear()} All rights reserved | by Shivani Katakam
                 </p>
                 <img src="https://preview.colorlib.com/theme/alime/img/core-img/logo.png" />
                 <div className="social-info">

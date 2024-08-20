@@ -6,8 +6,8 @@ export default function MainCounter() {
 
     const [count, setCount] = useState(0)
 
-    function increment() {
-        setCount(count + 1)
+    function increment(i) {
+        setCount(i + 1)
     }
 
     function decrement() {
