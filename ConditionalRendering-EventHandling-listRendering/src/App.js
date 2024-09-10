@@ -4,7 +4,8 @@ import Content from "./components/Content"
 import Card from "./components/Card"
 import data from './data'
 import ConditionalRendering from "./components/ConditionalRendering"
-import EventHandling from "./components/EventHandling"
+import EventHandling from "./components/EventHandlingClass"
+import EventHandlingFunctional from "./components/EventHandlingFunctional"
 
 /*
 Challenge: Build the Navbar component.
@@ -28,6 +29,7 @@ export default function App() {
             <div className="ms-2 d-grid align-content-center">
                 <ConditionalRendering isLoggedIn={true} />
                 <EventHandling name="me" />
+                <EventHandlingFunctional name="me" />
             </div>
         </div>
     )

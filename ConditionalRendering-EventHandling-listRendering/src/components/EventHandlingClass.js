@@ -24,6 +24,7 @@ export class EventHandling extends Component {
     render() {
         return (
             <div className='d-grid'>
+                <h4>Using Class Component</h4>
                 <button className='me-1 mb-2' onClick={this.buttonClick} >Click {this.props.name}!</button>
                 <button className='mb-2' onClick={this.handleClick}>{this.state.isToggleOn ? 'ON' : 'OFF'}</button>
                 <h6>{this.state.name}</h6>
