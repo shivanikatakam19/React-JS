@@ -5,7 +5,7 @@ import MouseCoordinates from './components/renderProps/renderProps.function';
 function App() {
   return (
     <div className="App">
-      <h4>Render Props Class Component</h4>
+      <h4>Render Props Class and Functional Component</h4>
       <header className="App-header">
         <div>
           <DataFetching
