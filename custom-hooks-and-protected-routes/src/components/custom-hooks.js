@@ -1,3 +1,7 @@
+// hooks are resuale java script functions. we can use them for the code which is reusable
+// they can be used in other components
+// cleaner and maintainable code
+
 import { useEffect, useState } from "react";
 
 export default function GetWindowSize() {
