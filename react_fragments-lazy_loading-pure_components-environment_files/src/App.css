@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  min-height: 100vh;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  margin: 5px;
+  color: #91b9b9;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+td,
+th {
+  border: 1px solid white;
+}
