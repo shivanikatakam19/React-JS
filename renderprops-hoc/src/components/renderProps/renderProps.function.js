@@ -9,7 +9,7 @@ export default function MouseCoordinates({ render }) {
 
     return (
         <div>
-            <div onMouseMove={handleMouseMove}>Mouse the Cursor</div>
+            <div onMouseMove={handleMouseMove}>Move the Cursor on this label</div>
             {render({ coordinates })}
         </div>
     )

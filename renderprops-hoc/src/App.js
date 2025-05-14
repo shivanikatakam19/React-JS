@@ -1,4 +1,6 @@
 import './App.css';
+import { NumberCounter } from './components/hoc/hoc.class';
+import { HelloWithLogger } from './components/hoc/hoc.function';
 import DataFetching from './components/renderProps/renderProps.class';
 import MouseCoordinates from './components/renderProps/renderProps.function';
 
@@ -41,6 +43,11 @@ function App() {
               src="https://media.4-paws.org/f/8/0/5/f8055215b5cdc5dee5494c255ca891d7b7d33cd1/Molly_006-2829x1886-2726x1886.jpg" />
           )
         }} />
+      <h4>Higher Order Components(HOC) in Class and Functional Components</h4>
+      <header className="App-header">
+        <HelloWithLogger name="Shivani" />
+        <NumberCounter />
+      </header>
     </div>
   );
 }
